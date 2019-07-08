@@ -1,0 +1,16 @@
+.inner-welcome {
+    background-image: url("../images/content/rock-fest.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+
+    &::after {
+        content: "";
+        height: 130px;
+        width: 100%;
+        background-color: #0a001d;
+        position: absolute;
+        bottom: -130px;
+        clip-path: polygon(0% 0%, 80% 100%, 100% 0%);
+    }
+}

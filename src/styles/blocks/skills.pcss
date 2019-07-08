@@ -1,0 +1,134 @@
+.skills {
+padding-top: 280px;
+padding-bottom: 150px;
+}
+
+.skills__container {
+    display: flex;
+}
+
+.skills__pic {
+    margin-right: 30px;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 768px;
+        height: 641px;
+        background: url("../images/content/rock_and_roll.png") no-repeat;
+        background-size: auto;
+        position: absolute;
+        top: 10%;
+        left: -69%;
+    }
+}
+
+.skills__img {
+    position: relative;
+    top: -50%;
+}
+
+.skills__title {
+    margin-bottom: 59px;
+}
+
+.sckills__text {
+    max-width: 585px;
+    margin-bottom: 95px;
+}
+
+.skills__data {
+    margin-left: 130px;
+    max-width: 745px;
+    width: 100%;
+}
+
+.skills__subtitle {
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 50px;
+}
+
+.skills__block {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 55px;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+
+
+.skill__wrapper {
+  width: 134px;
+  height: 134px;
+  position: relative;
+}
+
+.inner {
+  border: 12px solid lightgrey;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+}
+.span {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.outer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 18px;
+  width: calc(100% + 2px);
+  height: calc(100% + 2px);
+  position: absolute;
+  left: -2px;
+  top: -2px;
+  background: linear-gradient(to right, #003dea 0%, #0089f2 100%);
+  border-radius: 50%;
+}
+
+.text {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 18px;
+  font-weight: 700;
+  text-align: center;
+  opacity: 0.5;
+  color: #0a001d;
+}
+
+.percentage-0 {
+  clip-path: polygon(0 0%, 0% 0, 0% 0%, 0% 0%);
+}
+.percentage-5 {
+  clip-path: polygon(0 25%, 50% 50%, 50% 50%, 0 50%);
+}
+.percentage-10 {
+  clip-path: polygon(0 25%, 50% 50%, 50% 50%, 0 50%);
+}
+.percentage-15 {
+  clip-path: polygon(0 0, 8% 0, 50% 50%, 0 50%);
+}
+.percentage-25 {
+  clip-path: polygon(0 0, 50% 0, 50% 50%, 0 50%);
+}
+.percentage-40 {
+  clip-path: polygon(100% 0, 100% 8%, 50% 50%, 0 50%, 0 0);
+}

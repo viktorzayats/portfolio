@@ -1,0 +1,7 @@
+mixin nav(className, items, activeItem)
+    nav(class=`${className}`)
+        ul(class=`${className}__list`)
+            li(class=`${className}__item`)
+                a(class=`${className}__link` href='#')= item
+
++nav('nav', ["Главная", "Обо мне", "Навыки", "Работы", "Отзывы", "Связаться"])

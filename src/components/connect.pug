@@ -1,0 +1,22 @@
+section.connect
+    .container.connect__container
+        h4.form__title.title Связаться со мной
+        form.connect__form
+            .connect__row
+                label.connect__row-block
+                    .connect__row-text Введите ваше имя
+                    .connect__row-input
+                        +icon('user', 'connect__pic')
+                        input.connect__input(type="text", name='name', placeholder='Ковальчук Дмитрий')
+                label.connect__row-block
+                    .connect__row-text Введите ваш email
+                    .connect__row-input
+                        +icon('envelope', 'connect__pic')
+                        input.connect__input(type="mail", name='mail', placeholder='loftschool@study.com')
+            .connect__message
+                .connect__message-text Сообщение к письму
+                .connect__message-block
+                    +icon('message', 'connect__pic')
+                    textarea.connect__textarea(name="message", placeholder='Требуется ваша помощь в создании сайта. Интересуют сроки и цена вопроса')
+            button.connect__btn(type="submit") Отправить
+

@@ -1,0 +1,36 @@
+-
+    var slider = [
+        {
+            photo: require('images/content/user.jpg'),
+            name: 'Ковальчук Дмитрий',
+            position: 'Основатель Loftschool',
+            desc: 'Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!'
+        },
+        {
+            photo: require('images/content/user.jpg'),
+            name: 'Ковальчук Дмитрий',
+            position: 'Основатель Loftschool',
+            desc: 'Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 4,5 месяца только самых тяжелых испытаний и бессонных ночей!'
+        }
+    ]
+
+section.reviews
+    .container.reviews__container
+        h4.reviews__title.title Что обо мне говорят
+        .reviews__controls
+            button(type='button').reviews__btn &lt
+            button(type='button').reviews__btn &gt
+        ul.reviews__slider
+            each slide, item in slider
+                li.reviews__slide
+                    .reviews__slide-wrap
+                        .reviews__desc
+                            | #{slide.desc}
+                        .reviews__user
+                            .reviews__avatar
+                                img(src=slide.photo alt="")
+                            .reviews__data
+                                span.reviews__name
+                                    | #{slide.name}
+                                span.reviews__position 
+                                    |#{slide.position}

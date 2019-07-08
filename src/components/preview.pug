@@ -1,0 +1,47 @@
+-
+    var projects = [
+        {
+            id: '0',
+            img: require('images/content/1.jpg'),
+            tags: ['HTML', 'CSS', 'Javascript'],
+            header: 'lorem',
+            desc: 'Description',
+            projectLink: 'ya.ru'
+        },
+        {
+            id: '1',
+            img: require('images/content/2.jpg'),
+            tags: ['tag4', 'tag5', 'tag6'],
+            header: 'lorem2',
+            desc: 'Description2',
+            projectLink: 'ya.ru'
+        }
+    ]
+
+section.preview
+    .container.preview__container
+        h4.preview__title.title Мои работы
+        ul.preview__slides
+            li.preview__slide
+                ul.preview__slides-img
+                    li.preview__slide-img
+                        +image('content/1.jpg', 'preview__img')
+                    ul.preview__slides-small
+                        li.preview__slide-small
+                            button(type='button').preview__btn(style=`width: 178px; height: 100px;`)
+                                +image('content/1.jpg', 'preview__small-img')
+                        li.preview__slide-small
+                            button(type='button').preview__btn(style=`width: 178px; height: 100px;`)
+                                +image('content/2.jpg', 'preview__small-img')
+                ul.preview__slides-desc
+                    li.preview__slide-desc
+                        ul.preview__slides-tags
+                            li.preview__slide-tag HTML
+                            li.preview__slide-tag CSS
+                            li.preview__slide-tag Javascript
+                        h5.preview__subtitle Сайт школы образования
+                        p.preview__text Этот парень проходил обучение веб-разработке не где-то, а в LoftSchool! 2 месяца только самых тяжелых испытаний и бессонных ночей!
+                        a.preview__link(href='#') Посмотреть сайт
+            .preview__controls
+                button.preview__control-next(data-value="1") &gt
+                button.preview__control-prev(data-value="-1") &lt

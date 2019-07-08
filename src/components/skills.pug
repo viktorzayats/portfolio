@@ -1,0 +1,32 @@
+mixin skill(name, value)
+    .skill__wrapper
+        .inner
+        .outer(class=`percentage-${value}`)
+            span.span
+        .text
+            | #{name}
+
+section.skills
+    .container.skills__container
+        .skills__pic
+            +image('content/guitar1.png', 'skills__img')
+        .skills__content
+            h2.skills__title.title Чем я могу быть полезен вам
+            .sckills__text
+                p Этот сайт я сделал в рамках обучения в Школе 
+                  |онлайн образования LoftSchool. Чуть позже я освежу 
+                  |в нём свой контент. А пока посмотрите, 
+                  |как тут всё классно и красиво!
+            .skills__data
+                h3.skills__subtitle Front-end
+                .skills__block
+                    +skill('HTML5', '0')
+                    +skill('CSS3', '5')
+                    +skill('Javascript', '15')
+                    +skill('Jquery и Vue.js', '25')
+                h3.skills__subtitle Workflow 
+                .skills__block
+                    +skill('GIT', '40')
+                    +skill('Terminal', '40')
+                    +skill('Gulp', '10')
+                    +skill('Webpack', '25')

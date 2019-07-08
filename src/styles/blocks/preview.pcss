@@ -1,0 +1,135 @@
+.preview {
+    background-color: #f8f8f8;
+}
+
+.preview__container {
+    padding: 150px 0;
+}
+
+.preview__title {
+    margin-bottom: 90px;
+}
+
+.preview__slides {
+    position: relative;
+}
+
+.preview__slide {
+    display: flex;
+    justify-content: space-between;
+}
+
+.preview__slides-img {
+    max-width: 975px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.preview__slides-small {
+    position: absolute;
+    bottom: 10%;
+    right: 0;
+    display: flex;
+}
+
+.preview__slide-small {
+    max-width: 178px;
+    max-height: 100px;
+}
+
+.preview__small-img {
+    width: 100%;
+}
+
+.preview__slides-desc {
+    max-width: 337px;
+}
+
+.preview__slide-desc {
+position: relative;
+
+    &::before {
+        content: "2";
+        width: 212px;
+        height: 290px;
+        color: #f0f0f0;
+        font-size: 400px;
+        position: absolute;
+        left: -65%;
+        font-weight: 800;
+    }
+}
+
+.preview__btn {
+    padding: 0;
+}
+
+.preview__slides-tags {
+    display: flex;
+    margin-bottom: 45px;
+}
+
+.preview__slide-tag {
+    margin-right: 15px;
+    padding: 0 20px;
+    border-radius: 23px;
+    background-color: rgba(#7aa0c5, 0.1);
+    opacity: 0.7;
+    color: #283340;
+    font-size: 15px;
+    line-height: 48px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+.preview__subtitle {
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 48px;
+    margin-bottom: 40px;
+}
+
+.preview__text {
+    color: #2b3948;
+    opacity: 0.7;
+    line-height: 30px;
+    margin-bottom: 50px;
+}
+
+.preview__link {
+    color: $links-color;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+
+    &::before {
+        content: "";
+        width: 15px;
+        height: 15px;
+        background: svg-load('link.svg', fill=$links-color, width=100%, height=100%) no-repeat;
+        margin-right: 20px;
+        
+    }
+}
+
+.preview__controls {
+    display: inline-flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 10%;
+    right: 31%;
+}
+
+.preview__control-next, .preview__control-prev {
+    width: 50px;
+    height: 50px;
+    background-color: #2d3c4e;
+    color: #fff;
+
+}
+
